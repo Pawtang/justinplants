@@ -4,21 +4,13 @@ html, body{
   background-color: #ffffff;
   padding: 0;
   margin: 0;
-  background: #C6FFDD;  /* fallback for old browsers */
-  /* background-image: url('/images/geometric-leaves.png'), -webkit-linear-gradient(to bottom, #f7797d, #FBD786, #C6FFDD, .5);  /* Chrome 10-25, Safari 5.1-6 */
+  /* background: rgba(212, 252, 121);   */
   background-image: linear-gradient(to bottom,rgba(212, 252, 121, 0.5),rgba(150, 230, 161, 0.5)), url('/images/geometric-leaves.png');
   background-attachment: fixed;
   background-repeat: repeat;
   background-size: auto;
+  transition: background-color 3s linear;
 }
-
-
-body{
-  opacity: 0;
-   transition: opacity 2s;
-   -webkit-transition: opacity 2s; /* Safari */
-}
-
 
 header{
   width: 100%;
@@ -52,7 +44,7 @@ header{
   margin: 80px auto 0;
   padding: 40px;
   transition: all .5s ease-out;
-  border-radius: 10px;
+  border-radius: 50px;
   background-color: white;
 }
 
@@ -119,9 +111,19 @@ button:hover{
   padding: 22px;
   background-color: rgba(255,255,255,1);
   cursor: pointer;
-  -webkit-box-shadow: 0px 28px 39px -12px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 28px 39px -12px rgba(0,0,0,0.75);
-  box-shadow: 0px 28px 39px -12px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 18px 19px -12px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 18px 19px -12px rgba(0,0,0,0.75);
+  box-shadow: 0px 18px 19px -12px rgba(0,0,0,0.75);
+}
+
+button:active{
+  transition: all .05s ease-out;
+  padding: 20px;
+  background-color: rgba(255,255,255,1);
+  cursor: pointer;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
 h1{

@@ -20,3 +20,13 @@ function fadein() {
         p.classList.remove('hide')
     }, 500);
 }
+
+
+document.getElementById("bloom").addEventListener("click", function(){
+    const  body = document.getElementsByTagName('body')[0];
+    const  htmlb = document.getElementsByTagName('html')[0];
+    body.style.backgroundImage = 'none';
+    htmlb.style.backgroundImage = 'none';
+    htmlb.style.background =  'rgba(212, 252, 121)';
+    body.style.background = 'rgba(212, 252, 121)';
+  });
