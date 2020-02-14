@@ -4,10 +4,14 @@ html, body{
   background-color: #ffffff;
   padding: 0;
   margin: 0;
-  background: rgb(108,222,132);
-  background: linear-gradient(137deg, rgba(108,222,132,1) 0%, rgba(182,186,182,1) 100%);
-  /* background-image: url('/images/header-background.jpg'); */
+  background: #C6FFDD;  /* fallback for old browsers */
+  /* background-image: url('/images/geometric-leaves.png'), -webkit-linear-gradient(to bottom, #f7797d, #FBD786, #C6FFDD, .5);  /* Chrome 10-25, Safari 5.1-6 */
+  background-image: linear-gradient(to bottom,rgba(212, 252, 121, 0.5),rgba(150, 230, 161, 0.5)), url('/images/geometric-leaves.png');
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-size: auto;
 }
+
 
 body{
   opacity: 0;
@@ -41,9 +45,10 @@ header{
 }
 
 .flex-card-element{
+  opacity: .75;
   position: relative;
   width: 60%;
-  min-width: 600px;
+  max-width: 600px;
   margin: 80px auto 0;
   padding: 40px;
   transition: all .5s ease-out;
@@ -55,14 +60,15 @@ header{
   margin-left: 50px;
   content:"";
   position:absolute;
-  bottom:-15px; /* value = - border-top-width - border-bottom-width */
-  left:500px; /* controls horizontal position */
-  border-width:15px 15px 0; /* vary these values to change the angle of the vertex */
   border-style:solid;
-  border-color:white transparent;
-  /* reduce the damage in FF3.0 */
   display:block;
   width:0;
+  top: 50px; /* value = - border-top-width - border-bottom-width */
+  left: auto; /* controls horizontal position */
+  bottom:auto;
+  right:-25px;
+  border-width: 0px 25px 25px 15px; /* vary these values to change the angle of the vertex */
+  border-color:white transparent;
 }
 
 .flex-card-element.left:after{
@@ -72,11 +78,11 @@ header{
   border-style:solid;
   display:block;
   width:0;
-  top: 0px; /* value = - border-top-width - border-bottom-width */
+  top: 50px; /* value = - border-top-width - border-bottom-width */
   left:-75px; /* controls horizontal position */
   bottom:auto;
   right:auto;
-  border-width: 20px 10px 0px 25px; /* vary these values to change the angle of the vertex */
+  border-width: 25px 15px 0px 25px; /* vary these values to change the angle of the vertex */
   border-color:white transparent;
 }
 
@@ -119,9 +125,9 @@ button:hover{
 }
 
 h1{
-  margin: 0 auto;
+  margin: 50px auto ;
   padding: 60px;
-  color: white;
+  color: black;
 }
 
 .fadeout{
