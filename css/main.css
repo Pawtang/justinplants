@@ -1,0 +1,85 @@
+body, html{
+    width: 100%;
+    margin: 0;
+    background-color: white;
+    font-family: sans-serif;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+  }
+  
+  #content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+  }
+
+header{
+    width: 100%;
+    background: rgb(108,222,132);
+    background: linear-gradient(137deg, rgba(108,222,132,1) 0%, rgba(206,123,235,1) 100%);
+    height: 400px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+footer{
+    background: rgb(108,222,132);
+    background: linear-gradient(137deg, rgba(108,222,132,1) 0%, rgba(206,123,235,1) 100%);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem; 
+}
+
+main{
+    margin: 0;
+    height: 800px;
+    color: black;
+    padding: 0 100px;
+}
+
+h1{
+    color: white;
+    font-size: 4em;
+    margin: auto;
+    font-style: italic;
+}
+
+#hilight{
+    color: rgb(108,222,132);
+    font-size: 1.2em;
+    font-weight: bold;
+    display: inline;
+}
+
+p{
+    display: block;
+    margin: 50px auto;
+    color: darkslategray;
+    word-wrap: normal;
+    line-height: 1.8em;
+    font-size: 1.1em;
+}
+
+.Rtable {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 0;
+    width: 80%;
+    max-width: 800px;
+    min-width: 500px;
+  }
+  .Rtable-cell {
+    box-sizing: border-box;
+    flex-grow: 1;
+    width: 100%;  
+    padding: 0.8em 1.2em;
+    overflow: hidden; 
+    list-style: none;
+    border: solid  white;
+    background: fade(slategrey,20%);
+  }
